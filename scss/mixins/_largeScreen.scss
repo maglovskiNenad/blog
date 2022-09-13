@@ -1,0 +1,23 @@
+@import "./mixins";
+@import "./vectors";
+
+@mixin large() {
+  main {
+    .left_side_of_page {
+      height: 1200px;
+    }
+  }
+  /////////////////////////////////////SECTION ON THE RIGHT SIDE => ABOUT ME SECTION
+
+  .right_side_of_page {
+    width: 50%;
+  }
+  .about_me {
+    width: 78%;
+  }
+  /////////////////////////////////////SECTION ON THE RIGHT SIDE => FORM FOR ADDING MORE STORY
+
+  .add_more_blog {
+    width: 96%;
+  }
+}

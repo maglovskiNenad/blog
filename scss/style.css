@@ -1,0 +1,481 @@
+body {
+  background-color: #ffffff;
+}
+body main {
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid rgba(155, 165, 201, 0.1);
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+header h1 {
+  color: #17181c;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+}
+
+.message {
+  background-color: yellow;
+  color: #17181c;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  top: 0.1rem;
+  left: 810px;
+  -webkit-animation: openclose 5s ease-in-out infinite;
+          animation: openclose 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 230px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 285px;
+  }
+  95% {
+    top: -9rem;
+    width: 285px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 230px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 285px;
+  }
+  95% {
+    top: -9rem;
+    width: 285px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+}
+main .left_side_of_page {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 1000px;
+  width: 100%;
+}
+
+.blog {
+  display: block;
+  margin: 2em auto;
+  padding: 20px;
+  border: 1px solid rgba(155, 165, 201, 0.1);
+  width: 90%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+}
+.blog .blog_img img {
+  width: 884px;
+  height: 400px;
+  border: 1px solid rgba(155, 165, 201, 0.1);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  filter: blur(4px);
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+.blog .blog_title {
+  line-height: 0;
+}
+.blog .blog_title h1 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.blog .blog_title p {
+  font-size: 1em;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 1px;
+}
+.blog .take_me_btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 1em;
+  background-color: #fa4753;
+  border: 1px solid #fa4753;
+  border-radius: 5px;
+  width: 264px;
+  height: 50px;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  cursor: pointer;
+}
+
+.blog:hover .blog_img img {
+  filter: blur(0);
+}
+
+.blog_img img {
+  border-radius: 5px;
+  border: 1px solid rgba(155, 165, 201, 0.1);
+}
+.blog_img .no_photo {
+  font-family: "Rubik", sans-serif;
+  font-size: 1em;
+  padding: 5px;
+  color: #9ba5c9;
+  border-bottom: 1px solid #9ba5c9;
+  border-top: 1px solid #9ba5c9;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blog_text {
+  font-family: "Rubik", sans-serif;
+}
+.blog_text p {
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.whole {
+  display: none;
+}
+
+.short {
+  display: block;
+}
+
+.show_more_text .show_more_btn {
+  background-color: #ffffff;
+  border: 1px solid rgba(155, 165, 201, 0.1);
+  font-family: 3em;
+  margin: 1em 0;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 1em;
+}
+
+.right_side_of_page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+}
+
+.about_me {
+  width: 63%;
+  margin: 2em 0;
+  line-height: 18px;
+  border: 1px solid rgba(155, 165, 201, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 2em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+}
+.about_me h3 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+.about_me img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border: 1px solid rgba(155, 165, 201, 0.1);
+  transition: 0.3s ease-in-out;
+}
+.about_me img:hover {
+  transform: scale(1.1);
+}
+
+.add_more_blog {
+  width: 80%;
+  border: 1px solid rgba(155, 165, 201, 0.1);
+  margin-top: 0;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add_more_blog h3 {
+  padding: 5px 0;
+  margin: 0;
+  font-size: 3em;
+  font-family: "Bebas Neue", cursive;
+}
+
+.btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 1em;
+  background-color: #fa4753;
+  border: 1px solid #fa4753;
+  border-radius: 5px;
+  width: 264px;
+  height: 50px;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Rubik", sans-serif;
+  padding: 1em;
+}
+form input {
+  border: 1px solid rgba(155, 165, 201, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+form textarea {
+  border: 1px solid rgba(155, 165, 201, 0.1);
+  border-radius: 5px;
+  margin-top: 5px;
+  font-family: "Rubik", sans-serif;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+form input.active {
+  border: 1px solid #fa4753;
+}
+form textarea.active {
+  border: 1px solid #fa4753;
+}
+
+footer {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .img_footer {
+  margin: 5px;
+}
+footer .img_footer img {
+  width: 30px;
+}
+
+.footer_text small {
+  font-family: "Bebas Neue", cursive;
+}
+
+@media only screen and (min-width: 1200px) {
+  main .left_side_of_page {
+    height: 1200px;
+  }
+  .right_side_of_page {
+    width: 50%;
+  }
+  .about_me {
+    width: 78%;
+  }
+  .add_more_blog {
+    width: 96%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .message {
+    left: 62%;
+  }
+  main .left_side_of_page {
+    height: 1150px;
+  }
+  .blog {
+    margin: 1em auto;
+    width: 80%;
+  }
+  .blog .blog_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .blog .blog_title {
+    line-height: 0;
+  }
+  .blog .blog_title p {
+    display: none;
+  }
+  .right_side_of_page {
+    width: 50%;
+  }
+  .about_me {
+    width: 78%;
+  }
+  .add_more_blog {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  header {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .blog {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .blog .blog_img img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid rgba(155, 165, 201, 0.1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    filter: blur(4px);
+    transition: 0.3s ease-in-out;
+    width: 100%;
+  }
+  .blog .blog_title h1 {
+    font-size: 25px;
+  }
+  .blog .blog_title p {
+    display: none;
+  }
+  .right_side_of_page {
+    width: 100%;
+  }
+  .about_me {
+    text-align: center;
+    margin: 8em auto;
+    line-height: none;
+    display: block;
+  }
+  .about_me h3 {
+    font-size: 35px;
+  }
+  .add_more_blog {
+    width: 90%;
+    margin: 1em;
+  }
+}/*# sourceMappingURL=style.css.map */

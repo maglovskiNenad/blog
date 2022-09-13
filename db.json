@@ -1,0 +1,78 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "titleHeding": "JS",
+      "titleDescription": "JavaScript",
+      "imageOfStory": "https://blog.logrocket.com/wp-content/uploads/2022/04/build-image-carousel-from-scratch-vanilla-javascript.png",
+      "textStory": "JavaScript is a dynamic, weakly typed and interpreted high-level programming language. It is standardized by the EKMAS encryption language specification. Along with HTML and CSS, JavaScript is one of the three leading technologies for defining content on the Web; website size uses JavaScript and all modern web readers support it without the need to install plugins. Combined with the HTML language and CSS, JavaScript forms DHTML.",
+      "date": "Dec 07,2017"
+    },
+    {
+      "id": 2,
+      "titleHeding": "HTML",
+      "titleDescription": "Hyper Text Markup Language",
+      "imageOfStory": "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg",
+      "textStory": "Hyper Text Markup Language is the language in which most websites are written. HTML is used to create pages and make them functional.The code used to make them visually appealing is known as CSS and we shall focus on this in a later tutorial.",
+      "date": "Dec 09,2017"
+    },
+    {
+      "id": 3,
+      "titleHeding": "CSS",
+      "titleDescription": "Cascading Style Sheets",
+      "imageOfStory": "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png",
+      "textStory": "Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.",
+      "date": "Dec 07,2017"
+    },
+    {
+      "titleHeding": "Sass",
+      "titleDescription": "Syntactically awesome style sheets",
+      "imageOfStory": "https://miya-system-works.com/resource/media/1651/1651_960x540.png",
+      "name": "Nenad",
+      "email": "test@test.com",
+      "textStory": "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries.Sass boasts more features and abilities than any other CSS extension language out there. The Sass Core Team has worked endlessly to not only keep up, but stay ahead.Sass has been actively supported for almost 16 years by its loving Core Team.Over and over again, the industry is choosing Sass as the premier CSS extension language.Sass is actively supported and developed by a consortium of several tech companies and hundreds of developers.There are an endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.",
+      "date": "September,10:51",
+      "id": 4
+    },
+    {
+      "titleHeding": "Ts",
+      "titleDescription": "TypeScript",
+      "imageOfStory": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxqWULquOgDzIQ5jtnvC1Mn4pCgvXyMyNUyGgxdzqheBTKoYDzl6Htd31MICIVyMRjzMk&usqp=CAU",
+      "name": "Test",
+      "email": "test@test.com",
+      "textStory": "TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. It is designed for the development of large applications and transpiles to JavaScript. As it is a superset of JavaScript, existing JavaScript programs are also valid TypeScript programs.\n\nTypeScript may be used to develop JavaScript applications for both client-side and server-side execution. Multiple options are available for transpilation. The default TypeScript Compiler can be used, or the Babel compiler can be invoked to convert TypeScript to JavaScript.\n\nTypeScript supports definition files that can contain type information of existing JavaScript libraries, much like C++ header files can describe the structure of existing object files. This enables other programs to use the values defined in the files as if they were statically typed TypeScript entities. There are third-party header files for popular libraries such as jQuery, MongoDB, and D3.js. TypeScript headers for the Node.js basic modules are also available, allowing development of Node.js programs within TypeScript.",
+      "date": "September, 10:55",
+      "id": 5
+    },
+    {
+      "titleHeding": "Ng",
+      "titleDescription": "Angular",
+      "imageOfStory": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdIh2dW4obO5AlPGIYteODNtmMIgSOaC9IiQTxxVMXeUuvcG55YaFMXdZQpLjNRna_g&usqp=CAU",
+      "name": "Test",
+      "email": "test@test.com",
+      "textStory": "Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop.Achieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering.\nAngular puts you in control over scalability. Meet huge data requirements by building data models on RxJS, Immutable.js or another push-model.Build features quickly with simple, declarative templates. Extend the template language with your own components and use a wide array of existing components. Get immediate Angular-specific help and feedback with nearly every IDE and editor. All this comes together so you can focus on building amazing apps rather than trying to make the code work.",
+      "date": "September, 10:41",
+      "id": 6
+    },
+    {
+      "titleHeding": "React JS",
+      "titleDescription": "ReactJS",
+      "imageOfStory": "https://i0.wp.com/off.tokyo/wp-content/uploads/2021/02/react.jpg?fit=2000%2C1126&ssl=1",
+      "name": "Mirko",
+      "email": "test@test.com",
+      "textStory": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.Declarative views make your code more predictable and easier to debug.Build encapsulated components that manage their own state, then compose them to make complex UIs.\nSince component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.",
+      "date": "September, 22:25",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

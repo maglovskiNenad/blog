@@ -1,0 +1,48 @@
+@import "./mixins";
+@import "./vectors";
+
+@mixin medium() {
+  ///////////////////////////////////// NAVBAR
+
+  .message {
+    left: 62%;
+  }
+
+  /////////////////////////////////////FIRST SECTION ON THE LEFT SIDE
+  main {
+    .left_side_of_page {
+      height: 1150px;
+    }
+  }
+  .blog {
+    margin: 1em auto;
+    width: 80%;
+    .blog_img {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .blog_title {
+      line-height: 0;
+      p {
+        display: none;
+      }
+    }
+  }
+
+  /////////////////////////////////////SECTION ON THE RIGHT SIDE => ABOUT ME SECTION
+
+  .right_side_of_page {
+    width: 50%;
+  }
+  .about_me {
+    width: 78%;
+  }
+
+  /////////////////////////////////////SECTION ON THE RIGHT SIDE => FORM FOR ADDING MORE STORY
+
+  .add_more_blog {
+    width: 100%;
+  }
+}

@@ -1,0 +1,288 @@
+@import "./mixins/vectors";
+@import "./mixins/mixins";
+@import "./mixins/largeScreen";
+@import "./mixins/mediumScreen";
+@import "./mixins/smallScreen";
+
+///////////////////////////////////// BODY
+
+body {
+  background-color: $white;
+  main {
+    margin: auto;
+  }
+}
+
+///////////////////////////////////// NAVBAR
+
+header {
+  text-align: center;
+  border-bottom: 1px solid $light_purple_opacity;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  h1 {
+    color: $black;
+    font-family: $title_text;
+    font-size: $title_size;
+    line-height: 1.5;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.message {
+  background-color: $yelow;
+  color: $black;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  top: 0.1rem;
+  left: 810px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+// keyframes for navbar
+@include openclose();
+
+/////////////////////////////////////FIRST SECTION ON THE LEFT SIDE
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  .left_side_of_page {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 1000px;
+    width: 100%;
+  }
+}
+
+.blog {
+  display: block;
+  margin: 2em auto;
+  padding: 20px;
+  border: 1px solid $light_purple_opacity;
+  width: 90%;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+  .blog_img {
+    img {
+      width: 884px;
+      height: 400px;
+      border: 1px solid $light_purple_opacity;
+      box-shadow: $box-shadow;
+      filter: blur(4px);
+      transition: 0.3s ease-in-out;
+      width: 100%;
+    }
+  }
+  .blog_title {
+    line-height: 0;
+    h1 {
+      text-transform: uppercase;
+      font-family: $title_text;
+      font-size: $title_size;
+      letter-spacing: 5px;
+    }
+    p {
+      font-size: $text_size;
+      font-family: $main_text;
+      letter-spacing: 1px;
+    }
+  }
+  .take_me_btn {
+    @include btn();
+  }
+}
+
+.blog:hover {
+  .blog_img {
+    img {
+      filter: blur(0);
+    }
+  }
+}
+
+.blog_img {
+  img {
+    border-radius: 5px;
+    border: 1px solid $light_purple_opacity;
+  }
+  .no_photo {
+    font-family: $main_text;
+    font-size: $text_size;
+    padding: 5px;
+    color: $light_purple;
+    border-bottom: 1px solid $light_purple;
+    border-top: 1px solid $light_purple;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.blog_text {
+  font-family: $main_text;
+  p {
+    font-size: $text_size;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: justify;
+  }
+}
+
+// adding and removing text
+
+//removing the story from visible part
+.whole {
+  display: none;
+}
+
+// adding the story on visible part
+.short {
+  display: block;
+}
+
+.show_more_text {
+  .show_more_btn {
+    background-color: $white;
+    border: 1px solid $light_purple_opacity;
+    font-family: $title_size;
+    margin: 1em 0;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    font-size: $text_size;
+  }
+}
+
+/////////////////////////////////////SECTION ON THE RIGHT SIDE => ABOUT ME SECTION
+
+.right_side_of_page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+}
+
+.about_me {
+  width: 63%;
+  margin: 2em 0;
+  line-height: 18px;
+  border: 1px solid $light_purple_opacity;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 2em;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  h3 {
+    text-transform: uppercase;
+    font-family: $title_text;
+    font-size: $title_size;
+    letter-spacing: 2px;
+  }
+  img {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border: 1px solid $light_purple_opacity;
+    transition: 0.3s ease-in-out;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+}
+
+/////////////////////////////////////SECTION ON THE RIGHT SIDE => FORM FOR ADDING MORE STORY
+
+.add_more_blog {
+  width: 80%;
+  border: 1px solid $light_purple_opacity;
+  margin-top: 0;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    padding: 5px 0;
+    margin: 0;
+    font-size: $title_size;
+    font-family: $title_text;
+  }
+}
+
+.btn {
+  @include btn();
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: $main_text;
+  padding: 1em;
+  input {
+    border: 1px solid $light_purple_opacity;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: $box-shadow;
+  }
+  textarea {
+    border: 1px solid $light_purple_opacity;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-family: $main_text;
+    box-shadow: $box-shadow;
+  }
+}
+
+form {
+  input.active {
+    border: 1px solid $red;
+  }
+
+  textarea.active {
+    border: 1px solid $red;
+  }
+}
+///////////////////////////////////// FOOTER
+
+footer {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .img_footer {
+    margin: 5px;
+    img {
+      width: 30px;
+    }
+  }
+}
+
+.footer_text {
+  small {
+    font-family: $title_text;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  @include large();
+}
+
+@media only screen and(min-width:768px) and (max-width: 1199px) {
+  @include medium();
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  @include small();
+} ;

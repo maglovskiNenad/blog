@@ -1,0 +1,68 @@
+@import "./mixins";
+@import "./vectors";
+
+@mixin small() {
+  // HEADER
+  header {
+    display: none;
+  }
+
+  //   MAIN
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  //   BLOG
+  .blog {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .blog {
+    .blog_img {
+      img {
+        width: 100%;
+        height: 200px;
+        border: 1px solid $light_purple_opacity;
+        box-shadow: $box-shadow;
+        filter: blur(4px);
+        transition: 0.3s ease-in-out;
+        width: 100%;
+      }
+    }
+    .blog_title {
+      h1 {
+        font-size: 25px;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+
+  //   ABOUT ME SECTION
+
+  .right_side_of_page {
+    width: 100%;
+  }
+  .about_me {
+    text-align: center;
+    margin: 8em auto;
+    line-height: none;
+    display: block;
+
+    h3 {
+      font-size: 35px;
+    }
+  }
+
+  // ADD MORE BLOG
+  .add_more_blog {
+    width: 90%;
+    margin: 1em;
+  }
+}
