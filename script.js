@@ -258,6 +258,5 @@ function takeMeToCurrentStory(blogStoryId) {
   //open new Page
   window.open("blog_html/blog.html");
 
-  //show current clicked story
-  //use blog story id to show the story yuo have clicked
+  
 }
