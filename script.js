@@ -91,7 +91,6 @@ function showMoreText(storyId) {
           // this one is makig that the story need to be one below other
           wholeText.classList.toggle("short");
 
-          // I am sure that this dont need to be like this,try another way (sed story is that is working on all like it should)
           // This one need to remove one story and add another one
           shortText.classList.toggle("whole");
           shortText.classList.toggle("short");
